@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identity V - The Basics</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #e0e0e0;
+            text-align: center;
+            background-image: url('https://www.wallpaperup.com/uploads/wallpapers/2015/02/10/688585/34379e978c11c9f0e0f58ff634bba9d1.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            font-size: 30px;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 5px solid #e74c3c;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #f39c12;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .container {
+            padding: 40px 20px;
+        }
+
+        .section {
+            margin: 40px auto;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            width: 80%;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+        }
+
+        .section p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #2c3e50;
+            margin: 15px 0;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 18px;
+            color: white;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+        }
+
+        li:hover {
+            background-color: #e74c3c;
+            transform: scale(1.05);
+            transition: 0.3s;
+        }
+
+        li:before {
+            content: '\f0c9';
+            font-family: 'FontAwesome';
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #e74c3c;
+        }
+
+        .character-description {
+            font-style: italic;
+            font-size: 14px;
+            color: #bdc3c7;
+            margin-top: 10px;
+        }
+
+        .section img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #e74c3c;
+            padding: 10px;
+            text-align: center;
+            font-size: 16px;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .title-animation {
+            animation: flicker 1.5s infinite alternate;
+        }
+
+        @keyframes flicker {
+            0% {
+                opacity: 1;
+                text-shadow: 0 0 5px #e74c3c, 0 0 10px #e74c3c, 0 0 15px #e74c3c;
+            }
+            100% {
+                opacity: 0.7;
+                text-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="title-animation">Identity V - The Basics</header>
+    <div class="container">
+        <!-- About the Game -->
+        <div class="section">
+            <h2>About the Game</h2>
+            <p>Identity V is an asymmetrical horror mobile game developed by NetEase. Players either take the role of Survivors attempting to escape or the Hunter trying to capture them. The game features a gothic, Victorian setting, where strategy, teamwork, and stealth are key elements of survival.</p>
+        </div>
+        
+        <!-- Survivors Section -->
+        <div class="section">
+            <h2>Survivors</h2>
+            <p>Survivors must work together to decode cipher machines and escape while avoiding the Hunter. Each survivor has unique abilities that can support the team.</p>
+            <ul>
+                <li>Doctor
+                    <p class="character-description">The Doctor can heal herself and others quickly. Her healing abilities make her a key asset to a team of survivors.</p>
+                </li>
+                <li>Lawyer
+                    <p class="character-description">The Lawyer can use a special ability to manipulate the environment and reduce the Hunter's ability to track.</p>
+                </li>
+                <li>Thief
+                    <p class="character-description">The Thief excels at evasion and has skills that help in stealing important items for other survivors.</p>
+                </li>
+                <li>Gardener
+                    <p class="character-description">The Gardener can use her unique abilities to heal and protect survivors, especially during the escape phase.</p>
+                </li>
+                <li>Coordinator
+                    <p class="character-description">The Coordinator is an expert in crowd control, with skills to stun the Hunter for a short time to help others escape.</p>
+                </li>
+                <li>Mechanic
+                    <p class="character-description">The Mechanic is able to repair cipher machines quickly and has a robot companion that can help with decoding and other tasks.</p>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- Hunters Section -->
+        <div class="section">
+            <h2>Hunters</h2>
+            <p>Hunters aim to capture all Survivors before they can escape. Their unique abilities make them dangerous predators, constantly lurking in the shadows.</p>
+            <ul>
+                <li>Jack (The Ripper)
+                    <p class="character-description">Jack (The Ripper) specializes in quick, deadly attacks and can teleport to survivors in a flash, making him a terrifying opponent.</p>
+                </li>
+                <li>Leo (Hell Ember)
+                    <p class="character-description">Leo (Hell Ember) can summon flames to damage survivors and has high mobility to track and hunt them down efficiently.</p>
+                </li>
+                <li>Bane (Gamekeeper)
+                    <p class="character-description">Bane (Gamekeeper) uses traps to hinder survivors' movement and can create barriers to isolate them from the rest of the group.</p>
+                </li>
+                <li>Violetta (Soul Weaver)
+                    <p class="character-description">Violetta (Soul Weaver) uses her ability to create soul-chains to track and attack survivors from a distance.</p>
+                </li>
+                <li>Joker (Smiley Face)
+                    <p class="character-description">Joker (Smiley Face) utilizes a deadly trickery-based attack and can disorient survivors with illusions and traps.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>© 2025 Identity V Fan Site | All rights reserved</footer>
+</body>
+</html>

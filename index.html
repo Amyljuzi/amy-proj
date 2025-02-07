@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Amy 🍊</title>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Patrick Hand', cursive;
+            background-color: #fff3e0;
+            color: #333;
+            line-height: 1.8;
+            padding: 0 5%;
+            font-size: 1.2rem;
+        }
+
+        h1, h3 {
+            color: #ff8c00;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .layout-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        #pets {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        #animes {
+            flex: 0.8;
+            min-width: 200px;
+        }
+
+        .right-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            flex: 1;
+        }
+
+        section {
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            border: 2px dashed #ffa500;
+        }
+
+        .anime-card img, .image-container img, .pet-images img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            object-fit: contain;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .anime-card img:hover, .image-container img:hover, .pet-images img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Hello, my name is Amy 🍊</h1>
+        <h3>Welcome to my page. 🍊</h3>
+    </div>
+
+    <section id="about-me">
+        <h1>A Bit About Me 🍊</h1>
+        <p>I was born and raised in Beijing, China. I'm currently studying in the US. I'm 16 and a sophomore now. I am excited to share my stories and life with all of you! Here is my pets and my hobbies! 🍊</p>
+    </section>
+
+    <div class="layout-container">
+        <section id="pets">
+            <h1>My Pets 🍊</h1>
+            <div class="pet-images">
+                <a href="/333.png" target="_blank"><img src="/333.png" alt="Pet 1"></a>
+                <a href="/123.png" target="_blank"><img src="/123.png" alt="Pet 2"></a>
+            </div>
+        </section>
+        
+        <section id="animes">
+            <h1>Favorite Animes! 🍊</h1>
+            <div class="anime-card">
+                <a href="/thumb-1920-264784.jpg" target="_blank"><img src="/thumb-1920-264784.jpg" alt="Anime 1"></a>
+                <h3>Katekyo Hitman Reborn 🍊</h3>
+            </div>
+            <div class="anime-card">
+                <a href="/img11.png" target="_blank"><img src="/img11.png" alt="Anime 2"></a>
+                <h3>Tokyo Revengers 🍊</h3>
+            </div>
+            <div class="anime-card">
+                <a href="/img9.png" target="_blank"><img src="/img9.png" alt="Anime 3"></a>
+                <h3>Attack on Titan 🍊</h3>
+            </div>
+            <div class="anime-card">
+                <a href="/img10.png" target="_blank"><img src="/img10.png" alt="Anime 4"></a>
+                <h3>Haikyuu 🍊</h3>
+            </div>
+        </section>
+
+        <div class="right-container">
+            <section id="volleyball">
+                <h1>Volleyball 🍊</h1>
+                <div class="image-container">
+                    <a href="/Image 3.png" target="_blank"><img src="/Image 3.png" alt="Volleyball"></a>
+                    <a href="/Image 4.png" target="_blank"><img src="/Image 4.png" alt="Volleyball"></a>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 About Amy. All rights reserved. 🍊</p>
+    </footer>
+</body>
+</html>
